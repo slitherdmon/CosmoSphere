@@ -1,0 +1,239 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: "Roboto Condensed", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+#search-bar {
+    margin: 20px;
+    padding: 10px;
+    width: 150px;
+    height: 2vh;
+    border-radius: 2vh;
+    border: 1px solid #ddd;
+    background-color: #3b0c0c;
+    font-size: 16px;
+    color: #fff;
+    transition: opacity 0.4s ease, width 0.3s ease, background-color 0.3s ease;
+    text-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+    text-align: center;
+    align-self: center;
+}
+
+#search-bar:focus {
+    width: 175px;
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+    opacity: 1;
+    background-color: #3b0c0c;
+    text-shadow: 0 0 12px rgba(0, 123, 255, 1);
+}
+
+#search-bar::placeholder {
+    color: #aaa;
+}
+
+.games-collection {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.game-box-html {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    user-select: none;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    white-space: nowrap;
+}
+
+.game-box-html img {
+    border-radius: 2vh;
+    width: 175px;
+    background-color: white;
+    margin: 20px;
+    transition: all 0.2s ease;
+}
+
+.game-box-html img:hover {
+    border-radius: 1vh;
+    width: 150px;
+    background-color: white;
+}
+
+#gamescreen-box {
+    display: none;
+    height: 100%;
+    width: 100%;
+}
+
+#gamescreen-box iframe {
+    height: 100%;
+    width: 100%;
+}
+
+#closeIframeBtn {
+    height: 100px;
+    width: 200px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: url("../img/gamestyle.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    padding-top: 20px;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+#gamescreen-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+#closeIframeBox {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 5px;
+    background: rgba(255, 0, 0, 0.8);
+    padding: 5px 10px;
+}
+
+#closeIframeBox:hover {
+    background: rgba(255, 0, 0, 1);
+}
+
+.games-collection {
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 15px;
+}
+
+p {
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.7);
+}
+  .sidebar {
+    height: 100vh;
+    width: 200px;
+    margin-right: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #0a0a0a;
+    padding-top: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sidebar-brand a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 20px;
+  }
+  
+  .sidebar-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .sidebar-menu li {
+    margin: 10px 0;
+  }
+  
+  .sidebar-menu a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    display: block;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sidebar-menu a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+  }
+  
+  /* Dropdown styling */
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropbtn {
+    background-color: #333;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #575757;
+  }
+  
+  /* Show dropdown when hovered */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Main content area */
+  .main-content {
+    margin-left: 250px;
+    padding: 20px;
+    flex-grow: 1;
+  }
+  
